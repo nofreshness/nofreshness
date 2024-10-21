@@ -1,5 +1,3 @@
-# 更新时间: 看我心情咯 
-
 [general]
 # 用于节点延迟测试
 server_check_url= http://www.gstatic.com/generate_204
@@ -89,37 +87,7 @@ vmess=172.232.235.196:18888, method=aes-128-gcm, password=6170b83c-5f78-4b13-9d7
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 [filter_local]
-
-
-
-
-
 
 
 # 其他流量
