@@ -1,0 +1,167 @@
+# 更新时间: 看我心情咯 
+
+[general]
+# 用于节点延迟测试
+server_check_url= http://www.gstatic.com/generate_204
+
+# 服务器测试超时时间 (毫秒)
+server_check_timeout = 3000
+
+# 用于设置图标显示
+profile_img_url=https://github.githubassets.com/images/modules/site/integrators/google.png
+
+# 功能强大的解析器，用于引用资源的转换
+resource_parser_url=https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/resource-parser.js
+
+
+# 左上角地址
+geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://github.com/KOP-XIAO/QuantumultX/raw/master/Scripts/IP_API.js
+# 下列路径将不经过QuanX的处理
+excluded_routes=239.255.255.250/32, 24.105.30.129/32, 185.60.112.157/32, 185.60.112.158/32, 182.162.132.1/32
+udp_whitelist=1-442, 444-65535
+
+# dns_exclusion_list
+dns_exclusion_list = *.lan, *.direct, cable.auth.com, *.msftconnecttest.com, *.msftncsi.com, network-test.debian.org, detectportal.firefox.com, resolver1.opendns.com, *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com, stun.*, global.turn.twilio.com, global.stun.twilio.com, app.yinxiang.com, injections.adguard.org, local.adguard.org, cable.auth.com, localhost.*.qq.com, localhost.*.weixin.qq.com, *.logon.battlenet.com.cn, *.logon.battle.net, *.blzstatic.cn, music.163.com, *.music.163.com, *.126.net, musicapi.taihe.com, music.taihe.com, songsearch.kugou.com, trackercdn.kugou.com, *.kuwo.cn, api-jooxtt.sanook.com, api.joox.com, joox.com, y.qq.com, *.y.qq.com, streamoc.music.tc.qq.com, mobileoc.music.tc.qq.com, isure.stream.qqmusic.qq.com, dl.stream.qqmusic.qq.com, aqqmusic.tc.qq.com, amobile.music.tc.qq.com, *.xiami.com, *.music.migu.cn, music.migu.cn, proxy.golang.org, *.mcdn.bilivideo.cn, *.cmpassport.com, id6.me, open.e.189.cn, mdn.open.wo.cn, opencloud.wostore.cn, auth.wosms.cn, *.jegotrip.com.cn, *.icitymobile.mobi, *.pingan.com.cn, *.cmbchina.com, *.10099.com.cn, pool.ntp.org, *.pool.ntp.org, ntp.*.com, time.*.com, ntp?.*.com, time?.*.com, time.*.gov, time.*.edu.cn, *.ntp.org.cn, PDC._msDCS.*.*, DC._msDCS.*.*, GC._msDCS.*.*
+
+
+[dns]
+no-ipv6
+no-system
+doh-server=https://dns.alidns.com/dns-query
+server=119.29.29.29
+server=119.28.28.28
+server=223.5.5.5
+server=114.114.114.114
+server=/*.taobao.com/223.5.5.5
+server=/*.tmall.com/223.5.5.5
+server=/*.alipay.com/223.5.5.5
+server=/*.aliyun.com/223.5.5.5
+server=/*.jd.com/119.28.28.28
+server=/*.qq.com/119.28.28.28
+server=/*.tencent.com/119.28.28.28
+server=/*.weixin.com/119.28.28.28
+server=/*.bilibili.com/119.29.29.29
+server=/*.netease.com/119.29.29.29
+server=/*testflight.apple.com/23.76.66.98
+
+
+[policy]
+static=TG, proxy, direct, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/telegram.png
+static=WeChat, direct, proxy, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/wechat.png
+static=TikTok, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok_2.png
+static=抖音, direct, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok_2.png
+static=Chat GPT, proxy, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/chxm1023/ChatGPT4.png
+static=YouTube, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube_Letter.png
+static=Google, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
+static=MY baby, proxy, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/chxm1023/Quantumult_X.png
+
+
+[server_remote]
+
+
+
+
+
+[filter_remote]
+https://raw.githubusercontent.com/Centralmatrix3/Scripts/master/QuantumultX/ruleset/Unbreak.list, tag=规则修正, force-policy=direct, update-interval=-1, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/Centralmatrix3/Scripts/master/QuantumultX/ruleset/AdBlock.list, tag=广告拦截, force-policy=reject, update-interval=-1, opt-parser=true, inserted-resource=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Google/Google.list, tag=Google, force-policy=Google, update-interval=-1, opt-parser=true, enabled=true
+https://github.com/Repcz/Tool/raw/X/QuantumultX/Rules/OpenAI.list, tag=OpenAI, force-policy=Chat GPT, update-interval=-1, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/DouYin/DouYin.list, tag=抖音, force-policy=抖音, update-interval=-1, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/Video/YouTube.list, tag=YouTube, force-policy=YouTube, update-interval=-1, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/TikTok/TikTok.list, tag=TikTok, force-policy=TikTok, update-interval=-1, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/LucaLin233/Luca_Conf/main/Surge/Rule/Telegram.list, tag=TG, force-policy=TG, update-interval=-1, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/WeChat/WeChat.list, tag=WeChat, force-policy=WeChat, update-interval=-1, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list, tag=china, force-policy=direct, update-interval=-1, opt-parser=true, enabled=true
+
+
+FILTER_LAN, tag=LAN, force-policy=direct, update-interval=-1, opt-parser=false, enabled=true
+FILTER_REGION, tag=CN, force-policy=direct, update-interval=-1, opt-parser=false, enabled=true
+
+
+
+
+[rewrite_local]
+
+
+[server_local]
+vmess=172.232.235.196:18888, method=aes-128-gcm, password=6170b83c-5f78-4b13-9d79-2b4f3d6162b1, obfs=ws, obfs-uri=/, fast-open=false, udp-relay=false, aead=true, tag=Linode 🇮🇩1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[filter_local]
+
+
+
+
+
+
+
+# 其他流量
+final, MY baby
+
+# Local Area Network 局域网
+host-suffix, local, direct
+ip-cidr, 192.168.0.0/16, direct
+ip-cidr, 10.0.0.0/8, direct
+ip-cidr, 172.16.0.0/12, direct
+ip-cidr, 127.0.0.0/8, direct
+ip-cidr, 100.64.0.0/10, direct
+ip-cidr, 224.0.0.0/4, direct
+ip6-cidr, fe80::/10, direct
+
+
+
+
+[rewrite_remote]
+https://whatshub.top/rewrite/adultraplus.conf, tag=去广告, update-interval=-1, opt-parser=true, inserted-resource=true, enabled=true
+https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/Cube/youtube.snippet, tag=youtube, update-interval=-1, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/Cube/zhihu.snippet, tag=zhihu, update-interval=172800, opt-parser=false, inserted-resource=true, enabled=false
+https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/QX.snippet, tag=Sub Store, update-interval=-1, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/chxm1023/Rewrite/main/JavDB.js, tag=javdb, update-interval=-1, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/WeiGiegie/666/main/xmly.js, tag=喜马拉雅, update-interval=-1, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/NeteaseCloudMusic/netease.js, tag=网易云, update-interval=-1, opt-parser=true, enabled=true
+
+https://github.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=boxjs, update-interval=-1, opt-parser=true, enabled=false
+
+
+# 去广告
+
+
+[http_backend]
+
+
+[task_local]
+event-interaction https://raw.githubusercontent.com/getsomecat/Qx/main/Net_Speed.js, tag=⚡️ Net Speed, img-url=bolt.square.fill.system, enabled=true
+
+
+event-interaction https://raw.githubusercontent.com/xream/scripts/main/surge/modules/network-info/net-lsp-x.js, tag=网络信息 ⚡️, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Script-Hub.png, enabled=true
+
+event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/streaming-ui-check.js, tag = 流媒体 - 解锁查询, img-url=checkmark.seal.system, enabled=true
+
+[mitm]
