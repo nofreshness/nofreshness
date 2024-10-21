@@ -63,8 +63,8 @@ static=MY baby, proxy, img-url=https://raw.githubusercontent.com/fmz200/wool_scr
 
 
 [filter_remote]
-https://raw.githubusercontent.com/Centralmatrix3/Scripts/master/QuantumultX/ruleset/Unbreak.list, tag=规则修正, force-policy=direct, update-interval=-1, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/Centralmatrix3/Scripts/master/QuantumultX/ruleset/AdBlock.list, tag=广告拦截, force-policy=reject, update-interval=-1, opt-parser=true, inserted-resource=true, enabled=true
+
+
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Google/Google.list, tag=Google, force-policy=Google, update-interval=-1, opt-parser=true, enabled=true
 https://github.com/Repcz/Tool/raw/X/QuantumultX/Rules/OpenAI.list, tag=OpenAI, force-policy=Chat GPT, update-interval=-1, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/DouYin/DouYin.list, tag=抖音, force-policy=抖音, update-interval=-1, opt-parser=true, enabled=true
