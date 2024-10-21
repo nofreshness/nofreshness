@@ -51,7 +51,7 @@ static=WeChat, direct, proxy, img-url=https://raw.githubusercontent.com/fmz200/w
 static=TikTok, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok_2.png
 static=抖音, direct, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok_2.png
 static=Chat GPT, proxy, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/chxm1023/ChatGPT4.png
-static=YouTube, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube_Letter.png
+static=YouTube, proxy, img-url=https://raw.githubusercontent.com/nofreshness/nofreshness/refs/heads/main/YouTube_Letter.png
 static=Google, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
 static=MY baby, proxy, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/chxm1023/Quantumult_X.png
 
